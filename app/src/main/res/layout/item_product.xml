@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+
+    <Button
+        android:id="@+id/minusButton"
+        android:layout_width="35dp"
+        android:background="@drawable/minus"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:id="@+id/productQuantityTextView"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/med"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_marginHorizontal="8dp"
+        android:text="0"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/plusButton"
+        android:layout_width="35dp"
+        android:background="@drawable/plus"
+        android:layout_height="35dp" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="55dp"
+        android:text="מחק"
+        android:textColor="#fff"
+        android:background="@drawable/card"
+        android:fontFamily="@font/med"
+        android:layout_height="45dp" />
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+
+    <TextView
+        android:id="@+id/productNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textColor="#000"
+        android:fontFamily="@font/med"
+        android:text="שם המוצר"
+        android:textSize="18sp" />
+
+</LinearLayout>

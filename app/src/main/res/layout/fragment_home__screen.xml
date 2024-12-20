@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.Home_Screen">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:background="@drawable/header"
+            android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5" />
+
+                        <TextView
+                            android:id="@+id/username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:gravity="right"
+                            android:textSize="18sp"
+                            android:textColor="#fff"
+                            android:fontFamily="@font/med"
+                            android:layout_gravity="center_vertical"
+                            android:text="" />
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/profile" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5" />
+
+                        <LinearLayout
+                            android:id="@+id/addProductButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginStart="20dp"
+                            android:background="@drawable/card_header"
+                            android:orientation="horizontal">
+
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.5" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:gravity="right"
+                                    android:textColor="#fff"
+                                    android:fontFamily="@font/med"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="הוספת מוצר" />
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/add" />
+
+                        </LinearLayout>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+</LinearLayout>

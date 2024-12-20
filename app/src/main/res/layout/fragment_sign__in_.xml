@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.OnBoarding.Sign_In_Fragment"
+    android:id="@+id/main"
+    android:background="@drawable/spll"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="95dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:lineHeight="45dp"
+        android:layout_margin="15dp"
+        android:text="כניסה לאפליקציה"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:fontFamily="@font/bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="על מנת להשתמש במערכת יש לבצע כניסה"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:fontFamily="@font/reg" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="335dp"
+    android:layout_marginTop="45dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:background="@drawable/container_card"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/med"
+        android:layout_marginTop="25dp"
+        android:textSize="15sp"
+        android:textColor="#020047"
+        android:gravity="center"
+        android:text="כניסה באמצעות אימייל" />
+
+    <EditText
+        android:id="@+id/emailtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/text"
+        android:gravity="center_vertical|right"
+        android:paddingRight="25dp"
+        android:textSize="13sp"
+        android:hint="כתובת אימייל"
+        android:textColor="#8592A6"
+        android:fontFamily="@font/reg"
+        android:inputType="textEmailAddress" />
+    <TextView
+        android:id="@+id/email_err"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/med"
+        android:layout_gravity="right"
+        android:visibility="invisible"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="25dp"
+        android:textSize="12sp"
+        android:textColor="#FF2B5E"
+        android:gravity="right"
+        android:text="אימייל לא תקין" />
+
+
+    <EditText
+        android:id="@+id/passwordtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/text"
+        android:gravity="center_vertical|right"
+        android:paddingRight="25dp"
+        android:textSize="13sp"
+        android:hint="סיסמה"
+        android:textColor="#8592A6"
+        android:fontFamily="@font/reg"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/password_err"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/med"
+        android:layout_gravity="right"
+        android:visibility="invisible"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="25dp"
+        android:textSize="12sp"
+        android:textColor="#FF2B5E"
+        android:gravity="right"
+        android:text="סיסמה לא תקינה" />
+
+
+
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/card"
+        android:text="כניסה למערכת"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:fontFamily="@font/med" />
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/donthave_account"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:text="אין  לך משתמש? הירשם "
+        android:textColor="#B3B6C8"
+        android:textSize="14sp"
+        android:fontFamily="@font/reg" />
+
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/sign_up">
+
+    <fragment
+        android:id="@+id/sign_up"
+        android:name="com.dbm.task2.fragments.OnBoarding.SignUp_Fragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/onboarding_signup" >
+        <action
+            android:id="@+id/action_sign_up_to_blankFragment"
+            app:enterAnim="@anim/right"
+            app:destination="@id/personal_userdetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/personal_userdetails"
+        android:name="com.dbm.task2.fragments.OnBoarding.Personal_Details_Fragment"
+        android:label="fragment_blank2"
+        tools:layout="@layout/onboarding_personal_details" >
+        <action
+            android:id="@+id/action_personal_userdetails_to_home_Screen4"
+            app:destination="@id/home_Screen4" />
+    </fragment>
+    <fragment
+        android:id="@+id/sign_In_Fragment2"
+        android:name="com.dbm.task2.fragments.OnBoarding.Sign_In_Fragment"
+        android:label="fragment_sign__in_"
+        tools:layout="@layout/fragment_sign__in_" >
+        <action
+            android:id="@+id/action_sign_In_Fragment2_to_home_Screen4"
+            app:destination="@id/home_Screen4" />
+    </fragment>
+    <fragment
+        android:id="@+id/home_Screen4"
+        android:name="com.dbm.task2.fragments.Home_Screen"
+        android:label="fragment_home__screen"
+        tools:layout="@layout/fragment_home__screen" />
+</navigation>
